@@ -1,17 +1,23 @@
 {
   "expo": {
-    "name": "tristack",
-    "slug": "tristack",
+    "name": "HelloFullStack",
+    "slug": "project-yatagarasu",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "backgroundColor": "#FF6B35"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.projectyatagarasu.hellofullstack"
     },
     "android": {
+      "package": "com.projectyatagarasu.hellofullstack",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#FF6B35",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -19,7 +25,13 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "94cd20fa-2c44-47f3-a558-3def7f3d0b47"
+      }
     }
   }
 }
