@@ -22,22 +22,48 @@ across all three platforms on day one.
 
 ---
 
+## Screenshots
+
+Same codebase, zero platform-specific forks, three native-feeling apps. This is
+the whole pitch, right here:
+
+<table>
+  <tr>
+    <th align="center">Web</th>
+    <th align="center">iOS</th>
+    <th align="center">Android</th>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/web.png" width="280" alt="HelloFullStack running on Web" /></td>
+    <td><img src="assets/screenshots/ios.png" width="280" alt="HelloFullStack running on iOS" /></td>
+    <td><img src="assets/screenshots/android.png" width="280" alt="HelloFullStack running on Android" /></td>
+  </tr>
+</table>
+
+That's `npm start`, three keypresses (`w`, `i`, `a`), and the exact same
+`<TodoItem />` component rendering natively everywhere. No Storybook of
+platform hacks, no separate repos, no "close enough" ports. Just one
+boilerplate doing its job across the whole matrix effortlessly.
+
+---
+
 ## Table of Contents
 
-1. [Prerequisites](#prerequisites)
-2. [Cold Setup / Installation](#cold-setup--installation)
-3. [Run on Each Platform](#run-on-each-platform)
-4. [Test on a Real Device](#test-on-a-real-device)
-5. [Build a Standalone APK (EAS Build)](#build-a-standalone-apk-eas-build)
-6. [Build for iOS (EAS)](#build-for-ios-eas)
-7. [Submit to Stores](#submit-to-stores)
-8. [Project Structure](#project-structure)
-9. [Tech Stack](#tech-stack)
-10. [HelloFullStack Demo App](#hellofullstack-demo-app)
-11. [Debugging Tips](#debugging-tips)
-12. [Philosophy](#philosophy)
-13. [The Name](#the-name)
-14. [License](#license)
+1. [Screenshots](#screenshots)
+2. [Prerequisites](#prerequisites)
+3. [Cold Setup / Installation](#cold-setup--installation)
+4. [Run on Each Platform](#run-on-each-platform)
+5. [Test on a Real Device](#test-on-a-real-device)
+6. [Build a Standalone APK (EAS Build)](#build-a-standalone-apk-eas-build)
+7. [Build for iOS (EAS)](#build-for-ios-eas)
+8. [Submit to Stores](#submit-to-stores)
+9. [Project Structure](#project-structure)
+10. [Tech Stack](#tech-stack)
+11. [HelloFullStack Demo App](#hellofullstack-demo-app)
+12. [Debugging Tips](#debugging-tips)
+13. [Philosophy](#philosophy)
+14. [The Name](#the-name)
+15. [License](#license)
 
 ---
 
@@ -321,6 +347,7 @@ project-yatagarasu/
 │   └── types/            # TypeScript interfaces
 │       └── index.ts
 ├── assets/               # Icons, splash, favicon
+│   └── screenshots/      # Web, iOS, Android screenshots (used in README)
 ├── App.tsx               # Root component — start here
 ├── app.json              # Expo config
 └── tsconfig.json         # TypeScript config
